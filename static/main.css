@@ -1,0 +1,162 @@
+/*----------------- CSS RESET ------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------- CSS RESET ------------------*/
+
+body {
+	font-size: 18px;
+	background-color: #141414;
+	font: 100%/150% calibri,helvetica,sans-serif;
+}
+
+header, footer {
+	width: 100%;
+	color: #ffffff;
+	box-sizing: border-box;
+	height: 70px;
+	line-height: 70px;
+	background-color: black;
+}
+
+section {
+	padding: 2em;
+}
+
+footer {
+	margin-top: 2em;
+	clear: both;
+}
+
+nav {
+	width: 70%;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	border: 1px solid #adadad;
+}
+
+p, h3 {
+	color: #e5e5e5;
+}
+
+h2 {
+	font-size: 2.5em;
+	color: #ff0000;
+}
+
+h3 {
+	font-size: 1.33em;
+	font-weight: bold;
+	padding: 0px 0px 20px 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#site-title {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+
+nav select {
+  display: none
+}
+
+nav img {
+	display: none
+}
+
+nav a {
+	color: #b3b3b3;
+	display: inline;
+	background: none;
+	height: 100%;
+	width: 150px;
+	margin-left: 15px;
+}
+
+nav a:hover {
+	background: grey;
+}
+
+nav a:visited {
+	color: #b3b3b3;
+}
+
+
+/*START HERE*/
+
+#critically-acclaimed-container {
+
+}
+
+#trending-now-container {
+
+}
+
+#adventure-and-actoin-container{
+
+}
+
+#comedies-container {
+
+}
+
+.other-news-item {
+	display: inline-block;
+	width: 24%;
+}
+
+.other-news-item img {
+	width: 100%;
+	height: 10em;
+	object-fit: contain;
+}
