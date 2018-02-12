@@ -12,10 +12,10 @@ app = Flask(__name__)
 def index():
     return '<h1>Hello World!</h1>'
 
-""" LAB """
 @app.route('/netflix')
 def netflix():
-    return render_template('netflix.html')
+    genres = ['Home', 'Critically Acclaimed', 'Trending Now', 'Action and Adventure', 'Comedies']
+    return render_template('netflix.html', genres=genres)
 
 # Server Setup - This launches Flask integrated development web server
 if __name__ == '__main__': # ensure only launched when name matches. If its imported by other script then it wont launch

@@ -1,3 +1,8 @@
+
+<!-- Requirement 1: Navigate to this page from hello.py-->
+<!-- Requirement 2: Extends base.html and use block head from base.html-->
+<!-- Requirement 3: Use a Jinja2 forloop for genre in the Nav Bars-->
+
 {% extends "base.html" %}
 {% block head %}
 		{{ super() }}
@@ -9,11 +14,8 @@
 		<header>
 			<h2 id="site-title">Netflix</h2>
 			<nav>
-					<a href="#">Home</a>
-					<a href="#critically-acclaimed-container">Critically Acclaimed</a>
-					<a href="#trending-now-container">Trending Now</a>
-					<a href="#action-and-adventure-container">Action and Advnture</a>
-					<a href="#comedies-container">Comedies</a>
+
+					{% for genre in genres %} <a>{{ genre }}</a>{% endfor %}
 
 					<select>
 						<option selected="browse" value="browse">Browse</option>
@@ -29,6 +31,7 @@
 
 		<section id="critically-acclaimed-container">
 			<h3> Critically Acclaimed </h3>
+
 			<div class="other-news-item">
 				<img src="/static/assets/critically-acclaimed-movies/django.jpeg">
 				<p> Django </p>
