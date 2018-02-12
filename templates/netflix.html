@@ -1,15 +1,11 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+{% block head %}
+		{{ super() }}
+{% endblock %}
 
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Felines in a Grid</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="static/main.css">
-		<link rel="stylesheet" type="text/css" media="(max-width: 850px)" href="/static/medium.css">
-	</head>
+{% block body %}
+	{{ super() }}
 
-	<body>
 		<header>
 			<h2 id="site-title">Netflix</h2>
 			<nav>
@@ -119,5 +115,4 @@
 			<a href="#navigation">Back to top</a>
 			<span> | &copy; Netflix gone IOLabbooooyzzzzz 2018. All rights reserved.</span>
 		</footer>
-	</body>
-</html>
+{% endblock %}
