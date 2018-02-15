@@ -82,6 +82,11 @@ def bootstrap_user(name):
     myobj = myObj()
     return render_template('bootstrap_user.html', name=name, mydict=mydict, mylist=mylist, myobj=myobj)
 
+""" Error Handler """
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 # Server Setup - This launches Flask integrated development web server
 if __name__ == '__main__': # ensure only launched when name matches. If its imported by other script then it wont launch
     app.run(debug=True) # enable debug mode
